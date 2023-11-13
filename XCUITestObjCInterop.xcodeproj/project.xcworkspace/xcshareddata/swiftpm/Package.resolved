@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "public-ios-xcuisdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetEvinced/public-ios-xcuisdk.git",
+      "state" : {
+        "revision" : "9cde3ce8cd5d024acbeebcf49d6dbfae4fe04920",
+        "version" : "1.11.2"
+      }
+    }
+  ],
+  "version" : 2
+}
