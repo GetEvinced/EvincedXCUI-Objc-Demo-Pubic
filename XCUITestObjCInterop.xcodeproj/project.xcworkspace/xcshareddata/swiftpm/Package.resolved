@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/GetEvinced/public-ios-xcuisdk.git",
       "state" : {
-        "revision" : "9cde3ce8cd5d024acbeebcf49d6dbfae4fe04920",
-        "version" : "1.11.2"
+        "revision" : "878a44d6bef753f34c0579cdc4788da9167a1785",
+        "version" : "1.12.0"
       }
     }
   ],

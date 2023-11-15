@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4547C4DE2B054F7C00DEE0DE /* EvincedXCUISDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4547C4DD2B054F7C00DEE0DE /* EvincedXCUISDK */; };
 		AC569D9F2AE0215E0030980D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC569D9E2AE0215E0030980D /* AppDelegate.m */; };
 		AC569DA22AE0215E0030980D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC569DA12AE0215E0030980D /* SceneDelegate.m */; };
 		AC569DA52AE0215E0030980D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC569DA42AE0215E0030980D /* ViewController.m */; };
@@ -17,7 +18,6 @@
 		AC569DBA2AE021600030980D /* XCUITestObjCInteropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC569DB92AE021600030980D /* XCUITestObjCInteropTests.m */; };
 		AC569DC42AE021600030980D /* XCUITestObjCInteropUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC569DC32AE021600030980D /* XCUITestObjCInteropUITests.m */; };
 		AC569DD42AE021810030980D /* EvincedLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC569DD32AE021810030980D /* EvincedLauncher.swift */; };
-		AC569DD72AE021F70030980D /* EvincedXCUISDK in Frameworks */ = {isa = PBXBuildFile; productRef = AC569DD62AE021F70030980D /* EvincedXCUISDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC569DD72AE021F70030980D /* EvincedXCUISDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4547C4DE2B054F7C00DEE0DE /* EvincedXCUISDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +157,6 @@
 			);
 			name = XCUITestObjCInterop;
 			packageProductDependencies = (
-				AC569DD62AE021F70030980D /* EvincedXCUISDK */,
 			);
 			productName = XCUITestObjCInterop;
 			productReference = AC569D9A2AE0215E0030980D /* XCUITestObjCInterop.app */;
@@ -195,6 +194,9 @@
 				AC569DC12AE021600030980D /* PBXTargetDependency */,
 			);
 			name = XCUITestObjCInteropUITests;
+			packageProductDependencies = (
+				4547C4DD2B054F7C00DEE0DE /* EvincedXCUISDK */,
+			);
 			productName = XCUITestObjCInteropUITests;
 			productReference = AC569DBF2AE021600030980D /* XCUITestObjCInteropUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -232,7 +234,7 @@
 			);
 			mainGroup = AC569D912AE0215E0030980D;
 			packageReferences = (
-				AC569DD52AE021F70030980D /* XCRemoteSwiftPackageReference "public-ios-xcuisdk" */,
+				4547C4DC2B054F7C00DEE0DE /* XCRemoteSwiftPackageReference "public-ios-xcuisdk" */,
 			);
 			productRefGroup = AC569D9B2AE0215E0030980D /* Products */;
 			projectDirPath = "";
@@ -619,20 +621,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AC569DD52AE021F70030980D /* XCRemoteSwiftPackageReference "public-ios-xcuisdk" */ = {
+		4547C4DC2B054F7C00DEE0DE /* XCRemoteSwiftPackageReference "public-ios-xcuisdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/GetEvinced/public-ios-xcuisdk.git";
+			repositoryURL = "https://github.com/GetEvinced/public-ios-xcuisdk";
 			requirement = {
-				kind = exactVersion;
-				version = 1.11.2;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.12.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AC569DD62AE021F70030980D /* EvincedXCUISDK */ = {
+		4547C4DD2B054F7C00DEE0DE /* EvincedXCUISDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AC569DD52AE021F70030980D /* XCRemoteSwiftPackageReference "public-ios-xcuisdk" */;
+			package = 4547C4DC2B054F7C00DEE0DE /* XCRemoteSwiftPackageReference "public-ios-xcuisdk" */;
 			productName = EvincedXCUISDK;
 		};
 /* End XCSwiftPackageProductDependency section */
